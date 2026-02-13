@@ -1,0 +1,32 @@
+body {
+    background-color:lightpink;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    column-count: 3; /* How many columns I want my gallery containers to have */
+    column-gap: 10px; /* Gap between our columns */
+    padding: 15px; /* space between our item and the border */
+    max-width: 1600px; /* maximum width of our gallery */
+    margin: 0px auto; /* the space around the outside of the gallery */
+}
+
+.gallery-item {
+    margin-bottom: 10px;
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
+    transition: transform 0.3 ease-in-out;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
